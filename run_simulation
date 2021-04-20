@@ -1,0 +1,14 @@
+
+
+echo "Starting Simulation with $1 client requests..."
+python3.8 server_A.py &
+python3.8 server_B.py &
+python3.8 server_C.py &
+python3.8 server_D.py &
+python3.8 server_E.py &
+python3.8 server_F.py &
+python3.8 server_G.py &
+python3.8 loadBalancer.py &
+#python3.8 client.py $1
+
+
